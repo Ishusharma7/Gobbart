@@ -1,0 +1,60 @@
+.footer{
+    background-color: #1B1B1B;
+    padding: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.foot{
+    display: flex;
+    gap: 10vw;
+    font-size: 30px;
+}
+.foot h5{
+    position: relative;
+    padding-left: 80px;
+}
+.foot h5:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 50px;
+    height: 1px;
+    background: white;
+}
+.foot h6{
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+.big-line{
+    position: relative;
+}
+.big-line::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 50vw;
+    height: 1px;
+    line-height: 5px;
+    background: white;
+}
+.last h6{
+    font-weight: 100;
+    font-size: 20px;
+    width: 40vw;
+}
+.last{
+    padding-left:58%; 
+}
+@media screen and (max-width: 1930px) {
+    .foot{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .last{
+        padding: 0;
+    }
+}
